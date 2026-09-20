@@ -1,0 +1,49 @@
+# Python — SCD/IS scripts
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# C/C++ builds — IS labs compile task.cpp
+*.exe
+*.out
+*.obj
+*.o
+*.dll
+*.lib
+*.a
+*.so
+*.pdb
+*.ilk
+*.exp
+Debug/
+Release/
+build/
+
+# Web / node_modules — WT labs
+node_modules/
+dist/
+.cache/
+.next/
+
+# Editors and OS
+.vscode/*
+!.vscode/settings.json
+.idea/
+*.swp
+*.sublime-workspace
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# Logs and temp
+*.log
+*.tmp
+~$*
