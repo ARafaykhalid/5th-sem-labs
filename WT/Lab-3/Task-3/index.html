@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Registration Form</title>
+  </head>
+
+  <body>
+    <h1>University Registration Form</h1>
+
+    <form action="/register" method="post">
+      <fieldset>
+        <legend>Student Information</legend>
+
+        <label for="studentName">Student Name:</label>
+        <input type="text" id="studentName" name="studentName" required />
+        <br /><br />
+
+        <label for="studentId">Student ID:</label>
+        <input type="text" id="studentId" name="studentId" required />
+        <br /><br />
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required />
+      </fieldset>
+
+      <br />
+
+      <fieldset>
+        <legend>Program Selection</legend>
+
+        <label for="program">Select Program:</label>
+        <select id="program" name="program" required>
+          <option value="">Select a Program</option>
+          <option value="computer-science">Computer Science</option>
+          <option value="business">Business Administration</option>
+          <option value="software-engineering">Software Engineering</option>
+          <option value="information-technology">Information Technology</option>
+        </select>
+      </fieldset>
+
+      <br />
+
+      <fieldset>
+        <legend>Gender</legend>
+
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label>
+
+        <input type="radio" id="other" name="gender" value="other" />
+        <label for="other">Other</label>
+      </fieldset>
+
+      <br />
+
+      <fieldset>
+        <legend>Select Subjects</legend>
+
+        <input type="checkbox" id="web" name="subjects" value="web" />
+        <label for="web">Web Development</label>
+        <br />
+
+        <input type="checkbox" id="database" name="subjects" value="database" />
+        <label for="database">Database Systems</label>
+        <br />
+
+        <input
+          type="checkbox"
+          id="programming"
+          name="subjects"
+          value="programming" />
+        <label for="programming">Programming</label>
+        <br />
+
+        <input
+          type="checkbox"
+          id="networking"
+          name="subjects"
+          value="networking" />
+        <label for="networking">Computer Networks</label>
+      </fieldset>
+
+      <br />
+
+      <fieldset>
+        <legend>Contact Information</legend>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <br /><br />
+
+        <label for="telephone">Telephone:</label>
+        <input type="tel" id="telephone" name="telephone" required />
+      </fieldset>
+
+      <br />
+
+      <fieldset>
+        <legend>Account Security</legend>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+      </fieldset>
+
+      <br />
+
+      <input type="submit" value="Register" />
+    </form>
+  </body>
+</html>
