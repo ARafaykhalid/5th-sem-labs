@@ -1,0 +1,70 @@
+/* Reset default spacing */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+header {
+  background-color: #1e3a5f;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  background-color: #333;
+  padding: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Main content */
+main {
+  display: flex;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+/* Two content sections */
+section {
+  flex: 1;
+  background-color: #f2f2f2;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+section h2 {
+  color: #1e3a5f;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main {
+    flex-direction: column;
+  }
+}

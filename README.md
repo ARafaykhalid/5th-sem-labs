@@ -21,6 +21,7 @@ Lab work for three courses. Each course links to its lab folders; open a lab to 
 | Lab 1 | 4 | [WT/Lab-1](WT/Lab-1) |
 | Lab 2 | 4 | [WT/Lab-2](WT/Lab-2) |
 | Lab 3 | 5 | [WT/Lab-3](WT/Lab-3) |
+| Lab 4 | 4 | [WT/Lab-4](WT/Lab-4) |
 
 ## Software Construction & Development (SCD)
 

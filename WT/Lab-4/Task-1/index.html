@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Precedence Investigation</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Internal CSS -->
+    <style>
+      h1 {
+        color: green;
+        font-size: 40px;
+        background-color: lightgreen;
+      }
+
+      p {
+        color: green;
+        font-size: 24px;
+        background-color: lightgreen;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 style="color: red; font-size: 50px; background-color: yellow">
+      CSS Precedence Investigation
+    </h1>
+
+    <p style="color: red; font-size: 30px; background-color: yellow">
+      This paragraph demonstrates CSS precedence.
+    </p>
+  </body>
+</html>

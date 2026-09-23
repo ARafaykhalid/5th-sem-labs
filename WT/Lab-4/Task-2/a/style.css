@@ -1,0 +1,17 @@
+/* Element selector */
+h1 {
+  color: blue;
+  background-color: lightblue;
+}
+
+/* Class selector */
+.special-heading {
+  color: green;
+  background-color: lightgreen;
+}
+
+/* ID selector */
+#main-heading {
+  color: red;
+  background-color: yellow;
+}
