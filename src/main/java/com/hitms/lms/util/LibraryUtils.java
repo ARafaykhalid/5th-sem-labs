@@ -26,6 +26,7 @@ public class LibraryUtils {
      * @param id the ID of the member to find
      */
     public static void findMemberById(int id) {
+        System.out.println("Finding member with ID: " + id);
         // Test method which will be completed later (maybe in next labs)
     }
 
