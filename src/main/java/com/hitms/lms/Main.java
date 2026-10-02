@@ -1,13 +1,19 @@
 package com.hitms.lms;
 
-import java.time.LocalDate;
-
-import com.hitms.lms.util.LibraryUtils;
+import static com.hitms.lms.LibraryService.issueBook;
 
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println(LibraryUtils.formatTitle(" the great gatsby "));
-        System.out.println(LibraryUtils.daysBetween(LocalDate.of(2026, 1, 1), LocalDate.of(2026, 1, 15)));
+        try {
+            System.out.println(
+                    "Remaining copies: " + issueBook(3, "Clean Code")
+            );
+
+            issueBook(0, "Clean Code");
+
+        } catch (BookUnavailableException e) {
+            System.out.println("Transaction failed: " + e.getMessage());
+        }
     }
 }
