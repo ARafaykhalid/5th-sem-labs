@@ -34,6 +34,7 @@ dist/
 
 # Editors and OS
 .vscode/*
+.vscode
 !.vscode/settings.json
 .idea/
 *.swp
@@ -47,3 +48,40 @@ $RECYCLE.BIN/
 *.log
 *.tmp
 ~$*
+
+# Java / Maven
+target/
+*.class
+*.jar
+*.war
+*.ear
+
+# Maven local/cache files
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Java IDEs
+.classpath
+.project
+.settings/
+.factorypath
+
+# IntelliJ IDEA
+*.iml
+*.iws
+*.ipr
+out/
+
+# Eclipse
+bin/
+
+# NetBeans
+nbproject/private/
+nbbuild/
+dist/
+.nb-gradle/
+
+# Java tooling / build artifacts
+hs_err_pid*
+replay_pid*
+*.hprof

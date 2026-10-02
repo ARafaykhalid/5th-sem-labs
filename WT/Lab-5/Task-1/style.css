@@ -1,0 +1,426 @@
+/* =========================
+   BASIC RESET
+========================= */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  background: #f7f5f0;
+  color: #171717;
+
+  font-family: Arial, sans-serif;
+
+  line-height: 1.5;
+
+  overflow-x: hidden;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+header {
+  border-bottom: 1px solid #d8d5ce;
+}
+
+.navbar {
+  width: 90%;
+  max-width: 75rem;
+
+  margin: auto;
+  padding: 1.5rem 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 2rem;
+}
+
+.logo {
+  font-size: 1.2rem;
+  letter-spacing: 0.15rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+
+  list-style: none;
+}
+
+.nav-links a {
+  color: #171717;
+
+  text-decoration: none;
+
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+}
+
+.nav-links a:hover {
+  color: #777;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  width: 90%;
+  max-width: 75rem;
+
+  min-height: 70vh;
+
+  margin: auto;
+  padding: 6rem 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 4rem;
+
+  border-bottom: 1px solid #d8d5ce;
+}
+
+.small-text {
+  color: #777;
+
+  font-size: 0.75rem;
+
+  letter-spacing: 0.2rem;
+}
+
+.hero h1 {
+  margin: 1rem 0;
+
+  font-size: clamp(3rem, 8vw, 7rem);
+
+  line-height: 0.95;
+  letter-spacing: -0.05rem;
+}
+
+.hero-description {
+  width: 100%;
+  max-width: 32rem;
+
+  color: #666;
+
+  font-size: 1.1rem;
+
+  margin-bottom: 2rem;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.button {
+  display: inline-block;
+
+  padding: 0.9rem 1.5rem;
+
+  border: 1px solid #171717;
+
+  color: #171717;
+
+  text-decoration: none;
+
+  font-size: 0.8rem;
+
+  letter-spacing: 0.1rem;
+}
+
+.button:hover {
+  background: #171717;
+  color: #fff;
+}
+
+/* =========================
+   OFFER
+========================= */
+
+.offer {
+  width: 13rem;
+
+  padding: 2rem;
+
+  border: 1px solid #d0ccc4;
+
+  background: #ffffff;
+
+  text-align: center;
+}
+
+.offer span {
+  display: block;
+
+  color: #777;
+
+  font-size: 0.7rem;
+
+  letter-spacing: 0.2rem;
+}
+
+.offer strong {
+  display: block;
+
+  margin: 1rem 0;
+
+  font-size: 2.5rem;
+}
+
+.offer p {
+  color: #777;
+
+  font-size: 0.8rem;
+}
+
+/* =========================
+   MENU
+========================= */
+
+.menu {
+  width: 90%;
+  max-width: 75rem;
+
+  margin: auto;
+
+  padding: 7rem 0;
+}
+
+.section-heading {
+  margin-bottom: 4rem;
+}
+
+.section-heading h2 {
+  margin-top: 1rem;
+
+  font-size: clamp(2.5rem, 6vw, 5rem);
+
+  line-height: 1;
+}
+
+/* =========================
+   FLEXBOX CARDS
+========================= */
+
+.menu-grid {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 1.5rem;
+}
+
+.food-card {
+  flex: 1 1 calc(33.333% - 1.5rem);
+
+  min-width: 0;
+
+  background: #ffffff;
+
+  border: 1px solid #d8d5ce;
+}
+
+.food-image {
+  overflow: hidden;
+}
+
+.food-image img {
+  width: 100%;
+
+  aspect-ratio: 4 / 3;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+.food-info {
+  padding: 1.5rem;
+}
+
+.food-info h3 {
+  margin-bottom: 0.5rem;
+
+  font-size: 1.3rem;
+}
+
+.food-info p {
+  color: #777;
+
+  font-size: 0.95rem;
+
+  margin-bottom: 1rem;
+}
+
+.food-info strong {
+  color: #171717;
+
+  font-size: 1rem;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  width: 90%;
+  max-width: 75rem;
+
+  margin: auto;
+
+  padding: 7rem 0;
+
+  border-top: 1px solid #d8d5ce;
+}
+
+footer h2 {
+  margin: 1rem 0;
+
+  font-size: clamp(3rem, 8vw, 7rem);
+
+  line-height: 0.9;
+}
+
+footer p:not(.small-text) {
+  color: #777;
+
+  margin-top: 0.5rem;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 64rem) {
+  .hero {
+    min-height: auto;
+
+    padding: 5rem 0;
+
+    gap: 2rem;
+  }
+
+  .hero h1 {
+    font-size: clamp(3rem, 8vw, 5rem);
+  }
+
+  .food-card {
+    flex: 1 1 calc(50% - 1.5rem);
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 43.75rem) {
+  .navbar {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    padding: 1.2rem 0;
+  }
+
+  .nav-links {
+    width: 100%;
+
+    flex-wrap: wrap;
+
+    gap: 0.8rem 1.2rem;
+  }
+
+  .hero {
+    min-height: auto;
+
+    padding: 4rem 0;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.8rem, 13vw, 4.5rem);
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .offer {
+    width: 100%;
+
+    text-align: left;
+  }
+
+  .menu {
+    padding: 4rem 0;
+  }
+
+  .section-heading {
+    margin-bottom: 2.5rem;
+  }
+
+  .section-heading h2 {
+    font-size: clamp(2.5rem, 12vw, 4rem);
+  }
+
+  .food-card {
+    flex: 1 1 100%;
+  }
+
+  footer {
+    padding: 4rem 0;
+  }
+}
+
+/* =========================
+   SMALL PHONES
+========================= */
+
+@media (max-width: 30rem) {
+  .navbar,
+  .hero,
+  .menu,
+  footer {
+    width: 92%;
+  }
+
+  .nav-links {
+    gap: 0.6rem 1rem;
+  }
+
+  .nav-links a {
+    font-size: 0.8rem;
+  }
+
+  .hero {
+    padding: 3rem 0;
+  }
+
+  .hero h1 {
+    font-size: 2.7rem;
+  }
+
+  .offer strong {
+    font-size: 2rem;
+  }
+
+  .food-info {
+    padding: 1.2rem;
+  }
+}

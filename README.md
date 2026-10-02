@@ -27,9 +27,12 @@ Lab work for three courses. Each course links to its lab folders; open a lab to 
 
 | Lab | Tasks | Open |
 | --- | --- | --- |
-| Lab 1 | 10 | [SCD/Lab-1](SCD/Lab-1) |
-| Lab 2 | 2 | [SCD/Lab-2](SCD/Lab-2) |
-| Lab 3 | 2 | [SCD/Lab-3](SCD/Lab-3) |
+| Lab 1 | 4 | [SCD/Lab-1](SCD/Lab-1) |
+| Lab 2 | 3 | [SCD/Lab-2](SCD/Lab-2) |
+| Lab 3 | 3 | [SCD/Lab-3](SCD/Lab-3) |
+| Lab 4 | 4 | [SCD/Lab-4](SCD/Lab-4) |
+| Lab 5 | 4 | [SCD/Lab-5](SCD/Lab-5) |
+| Lab 6 | 4 | [SCD/Lab-6](SCD/Lab-6) |
 
 ## Information Security (IS)
 
