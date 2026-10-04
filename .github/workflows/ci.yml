@@ -2,9 +2,9 @@ name: LMS CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [ lms-project ]
   pull_request:
-    branches: [ main ]
+    branches: [ lms-project ]
 
 jobs:
   build-and-test:
