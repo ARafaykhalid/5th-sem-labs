@@ -1,25 +1,36 @@
 package com.hitms.lms;
 
-public class LibraryService {
+import java.util.HashMap; 
+import java.util.Map; 
 
-    /**
-     * Returns the copy count after issuing one copy of a title.
-     * 
-     * @param availableCopies the number of copies available for the title.
-     * @param title the title of the book to issue.
-     * @return the number of copies available after issuing one copy.
-     * @throws BookUnavailableException if availableCopies is 0.
-     */
-    public static int issueBook(int availableCopies, String title)
-            throws BookUnavailableException {
+public class LibraryService { 
+    private final Map<String, Integer> catalogue = new HashMap<>(); // title -> copies available 
+    public int addBook(String title, int copies) { 
+        catalogue.merge(title, copies, Integer::sum); 
+        return catalogue.get(title); 
+    } 
 
-        if (availableCopies <= 0) {
-            throw new BookUnavailableException(
-                    "'" + title + "' has no copies available."
-            );
-        }
+  
 
-        return availableCopies - 1;
-    }
+    public int issueBook(String title) throws BookUnavailableException { 
+        if (catalogue.getOrDefault(title, 0) <= 0) { 
+            throw new BookUnavailableException("'" + title + "' has no copies available."); 
+        } 
 
-}
+        catalogue.merge(title, -1, Integer::sum); 
+
+        return catalogue.get(title); 
+
+    } 
+
+  
+
+    public int returnBook(String title) { 
+
+        catalogue.merge(title, 1, Integer::sum); 
+
+        return catalogue.get(title); 
+
+    } 
+
+} 
