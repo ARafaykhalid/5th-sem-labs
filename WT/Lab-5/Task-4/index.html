@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Wanderly Travel</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- =========================
+     HEADER
+========================== -->
+
+    <header class="header">
+      <nav class="navbar">
+        <a href="#home" class="logo"> WANDERLY </a>
+
+        <div class="nav-links">
+          <a href="#destinations">Destinations</a>
+
+          <a href="#packages">Packages</a>
+
+          <a href="#booking">Booking</a>
+
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- =========================
+         HERO SECTION
+    ========================== -->
+
+      <section class="hero" id="home">
+        <div class="hero-content">
+          <p class="eyebrow">EXPLORE THE WORLD</p>
+
+          <h1>
+            Your next
+            <br />
+            adventure starts here.
+          </h1>
+
+          <p class="hero-description">
+            Discover beautiful destinations, flexible travel packages and
+            unforgettable experiences with Wanderly Travel.
+          </p>
+
+          <a href="#booking" class="hero-button"> PLAN YOUR TRIP </a>
+        </div>
+      </section>
+
+      <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+      <section class="travel-layout">
+        <!-- =========================
+             DESTINATIONS + PACKAGES
+        ========================== -->
+
+        <div class="main-content">
+          <!-- DESTINATIONS -->
+
+          <section class="destinations" id="destinations">
+            <div class="section-heading">
+              <p class="eyebrow">POPULAR DESTINATIONS</p>
+
+              <h2>Places worth visiting</h2>
+            </div>
+
+            <div class="destination-grid">
+              <!-- PARIS -->
+
+              <article class="destination-card">
+                <div class="destination-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a"
+                    alt="Eiffel Tower in Paris, France" />
+                </div>
+
+                <div class="destination-info">
+                  <h3>Paris, France</h3>
+
+                  <p>
+                    Explore historic streets, famous landmarks and delicious
+                    French cuisine.
+                  </p>
+
+                  <strong> From $899 </strong>
+                </div>
+              </article>
+
+              <!-- DUBAI -->
+
+              <article class="destination-card">
+                <div class="destination-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=900&q=80"
+                    alt="Dubai skyline and modern buildings" />
+                </div>
+
+                <div class="destination-info">
+                  <h3>Dubai, UAE</h3>
+
+                  <p>
+                    Experience modern architecture, beaches and desert
+                    adventures.
+                  </p>
+
+                  <strong> From $749 </strong>
+                </div>
+              </article>
+
+              <!-- BALI -->
+
+              <article class="destination-card">
+                <div class="destination-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=900&q=80"
+                    alt="Tropical scenery in Bali, Indonesia" />
+                </div>
+
+                <div class="destination-info">
+                  <h3>Bali, Indonesia</h3>
+
+                  <p>
+                    Relax on tropical beaches and discover beautiful temples and
+                    local culture.
+                  </p>
+
+                  <strong> From $999 </strong>
+                </div>
+              </article>
+
+              <!-- TOKYO -->
+
+              <article class="destination-card">
+                <div class="destination-image">
+                  <img
+                    src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=900&q=80"
+                    alt="Tokyo city street in Japan" />
+                </div>
+
+                <div class="destination-info">
+                  <h3>Tokyo, Japan</h3>
+
+                  <p>
+                    Discover exciting city life, traditional culture and
+                    incredible Japanese food.
+                  </p>
+
+                  <strong> From $1,199 </strong>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <!-- =========================
+                 PACKAGES
+            ========================== -->
+
+          <section class="packages" id="packages">
+            <div class="section-heading">
+              <p class="eyebrow">TRAVEL PACKAGES</p>
+
+              <h2>Choose your experience</h2>
+            </div>
+
+            <div class="package-list">
+              <article class="package">
+                <div>
+                  <h3>Weekend Escape</h3>
+
+                  <p>
+                    3 days / 2 nights with accommodation and selected
+                    activities.
+                  </p>
+                </div>
+
+                <strong> From $499 </strong>
+              </article>
+
+              <article class="package">
+                <div>
+                  <h3>Classic Explorer</h3>
+
+                  <p>7 days with accommodation, transfers and guided tours.</p>
+                </div>
+
+                <strong> From $899 </strong>
+              </article>
+
+              <article class="package">
+                <div>
+                  <h3>Luxury Adventure</h3>
+
+                  <p>
+                    Premium accommodation, private transfers and personalised
+                    experiences.
+                  </p>
+                </div>
+
+                <strong> From $1,499 </strong>
+              </article>
+            </div>
+          </section>
+        </div>
+
+        <!-- =========================
+             BOOKING PANEL
+        ========================== -->
+
+        <aside class="booking-panel" id="booking">
+          <p class="eyebrow">BOOKING INQUIRY</p>
+
+          <h2>Start planning your trip.</h2>
+
+          <p class="booking-description">
+            Tell us where you want to go and our travel team will help you plan
+            your journey.
+          </p>
+
+          <form class="booking-form">
+            <label for="destination"> Destination </label>
+
+            <select id="destination" name="destination">
+              <option value="">Select destination</option>
+
+              <option value="paris">Paris</option>
+
+              <option value="dubai">Dubai</option>
+
+              <option value="bali">Bali</option>
+
+              <option value="tokyo">Tokyo</option>
+            </select>
+
+            <label for="travellers"> Number of travellers </label>
+
+            <input
+              type="number"
+              id="travellers"
+              name="travellers"
+              min="1"
+              placeholder="2" />
+
+            <label for="travel-date"> Preferred date </label>
+
+            <input type="date" id="travel-date" name="travel-date" />
+
+            <button type="submit">SEND INQUIRY</button>
+          </form>
+        </aside>
+      </section>
+    </main>
+
+    <!-- =========================
+     FOOTER
+========================== -->
+
+    <footer id="contact">
+      <p class="footer-title">WANDERLY TRAVEL</p>
+
+      <p>Discover more. Travel further. Create memories.</p>
+    </footer>
+  </body>
+</html>

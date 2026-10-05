@@ -1,0 +1,643 @@
+/* =========================
+RESET
+========================= */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+
+  overflow-x: hidden;
+}
+
+body {
+  background: #f4f5f7;
+  color: #17202a;
+
+  font-family: Arial, sans-serif;
+
+  line-height: 1.5;
+
+  overflow-x: hidden;
+}
+
+/* =========================
+HEADER
+========================= */
+
+.header {
+  background: #17202a;
+
+  color: white;
+
+  padding: 1.2rem 5%;
+}
+
+.header-container {
+  width: 90%;
+  max-width: 75rem;
+
+  margin: auto;
+
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 2rem;
+}
+
+.brand span {
+  color: #aeb8c2;
+
+  font-size: 0.7rem;
+
+  letter-spacing: 0.15rem;
+}
+
+.brand h1 {
+  margin-top: 0.2rem;
+
+  font-size: clamp(1.4rem, 3vw, 2rem);
+}
+
+/* =========================
+NAVIGATION
+========================= */
+
+.navigation {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 1.2rem;
+}
+
+.navigation a {
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 0.9rem;
+}
+
+.navigation a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+MAIN
+========================= */
+
+main {
+  width: 90%;
+  max-width: 75rem;
+
+  margin: auto;
+}
+
+/* =========================
+ALERT BANNER
+========================= */
+
+.alert-banner {
+  margin: 2rem 0;
+
+  padding: 1.5rem;
+
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 1rem;
+
+  background: #fff1f1;
+
+  border: 2px solid #d62828;
+
+  border-radius: 0.5rem;
+
+  /*
+   Allows long emergency messages
+   to wrap instead of overflowing.
+*/
+  overflow-wrap: anywhere;
+}
+
+.alert-icon {
+  flex: 0 0 2.5rem;
+
+  width: 2.5rem;
+  height: 2.5rem;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+
+  background: #d62828;
+
+  color: white;
+
+  font-size: 1.4rem;
+
+  font-weight: bold;
+}
+
+.alert-text {
+  min-width: 0;
+}
+
+.alert-label {
+  color: #b91c1c;
+
+  font-size: 0.7rem;
+
+  font-weight: bold;
+
+  letter-spacing: 0.12rem;
+}
+
+.alert-text h2 {
+  margin: 0.3rem 0 0.5rem;
+
+  font-size: clamp(1.2rem, 3vw, 1.7rem);
+
+  line-height: 1.25;
+}
+
+.alert-text p {
+  color: #4b5563;
+
+  overflow-wrap: anywhere;
+}
+
+/* =========================
+TWO COLUMN LAYOUT
+========================= */
+
+.content-layout {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 2rem;
+
+  padding-bottom: 4rem;
+}
+
+.main-content {
+  flex: 1 1 65%;
+
+  min-width: 0;
+}
+
+.sidebar {
+  flex: 0 1 30%;
+
+  min-width: 0;
+}
+
+/* =========================
+CONTENT SECTIONS
+========================= */
+
+.content-section {
+  margin-bottom: 3rem;
+
+  padding-bottom: 2rem;
+
+  border-bottom: 1px solid #d5d9de;
+}
+
+.section-label {
+  display: block;
+
+  margin-bottom: 0.4rem;
+
+  color: #64748b;
+
+  font-size: 0.7rem;
+
+  font-weight: bold;
+
+  letter-spacing: 0.15rem;
+}
+
+.content-section h2,
+.contact-box h2 {
+  margin-bottom: 1.5rem;
+
+  font-size: clamp(1.7rem, 4vw, 2.5rem);
+
+  line-height: 1.1;
+}
+
+/* =========================
+PUBLIC NOTICES
+========================= */
+
+.notice {
+  padding: 1.2rem 0;
+
+  border-top: 1px solid #d5d9de;
+}
+
+.notice-heading span {
+  color: #64748b;
+
+  font-size: 0.7rem;
+
+  font-weight: bold;
+
+  text-transform: uppercase;
+}
+
+.notice-heading h3 {
+  margin: 0.3rem 0;
+
+  font-size: 1.1rem;
+}
+
+.notice p {
+  color: #5f6b76;
+
+  overflow-wrap: anywhere;
+}
+
+/* =========================
+WEATHER
+========================= */
+
+.weather-card {
+  padding: 1.3rem;
+
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 1.5rem;
+
+  background: white;
+
+  border: 1px solid #d5d9de;
+
+  border-radius: 0.5rem;
+}
+
+.warning {
+  color: #b45309;
+
+  font-size: 0.7rem;
+
+  font-weight: bold;
+
+  letter-spacing: 0.1rem;
+}
+
+.weather-card h3 {
+  margin-top: 0.3rem;
+
+  font-size: 1.2rem;
+}
+
+.weather-card p {
+  margin-top: 0.2rem;
+
+  color: #64748b;
+}
+
+.temperature {
+  flex-shrink: 0;
+
+  text-align: right;
+}
+
+.temperature strong {
+  display: block;
+
+  font-size: 1.8rem;
+}
+
+.temperature span {
+  color: #64748b;
+
+  font-size: 0.8rem;
+}
+
+/* =========================
+ESSENTIAL SERVICES
+========================= */
+
+.service-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 0.8rem;
+}
+
+.service-list a {
+  padding: 1rem;
+
+  display: flex;
+
+  flex-direction: column;
+
+  background: white;
+
+  border: 1px solid #d5d9de;
+
+  border-radius: 0.4rem;
+
+  color: #17202a;
+
+  text-decoration: none;
+}
+
+.service-list a:hover {
+  border-color: #2563eb;
+}
+
+.service-list strong {
+  font-size: 1rem;
+}
+
+.service-list span {
+  margin-top: 0.2rem;
+
+  color: #64748b;
+
+  font-size: 0.85rem;
+}
+
+/* =========================
+EMERGENCY CONTACTS
+========================= */
+
+.contact-box {
+  position: sticky;
+
+  top: 1rem;
+
+  padding: 1.5rem;
+
+  background: #17202a;
+
+  color: white;
+
+  border-radius: 0.5rem;
+}
+
+.contact-box .section-label {
+  color: #aeb8c2;
+}
+
+.contact-list {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 0.7rem;
+}
+
+.contact-list a {
+  padding: 1rem;
+
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 1rem;
+
+  background: #263442;
+
+  color: white;
+
+  text-decoration: none;
+
+  border-radius: 0.3rem;
+}
+
+.contact-list a:hover {
+  background: #344454;
+}
+
+.contact-list span {
+  min-width: 0;
+
+  overflow-wrap: anywhere;
+}
+
+.contact-list strong {
+  flex-shrink: 0;
+
+  font-size: 1.2rem;
+}
+
+.contact-note {
+  margin-top: 1rem;
+
+  color: #cbd5e1;
+
+  font-size: 0.8rem;
+
+  overflow-wrap: anywhere;
+}
+
+/* =========================
+FOOTER
+========================= */
+
+footer {
+  padding: 2rem 5%;
+
+  background: #17202a;
+
+  color: #aeb8c2;
+
+  text-align: center;
+
+  font-size: 0.8rem;
+}
+
+/* =========================
+TABLET
+1024px
+========================= */
+
+@media (max-width: 64rem) {
+  .header-container {
+    align-items: flex-start;
+  }
+
+  .content-layout {
+    gap: 1.5rem;
+  }
+
+  .main-content {
+    flex-basis: 62%;
+  }
+
+  .sidebar {
+    flex-basis: 35%;
+  }
+
+  .alert-banner {
+    padding: 1.3rem;
+  }
+}
+
+/* =========================
+MOBILE
+700px
+========================= */
+
+@media (max-width: 43.75rem) {
+  .header {
+    padding: 1rem 4%;
+  }
+
+  .header-container {
+    width: 92%;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 0.8rem;
+  }
+
+  .navigation {
+    width: 100%;
+
+    gap: 0.7rem 1rem;
+  }
+
+  main {
+    width: 92%;
+  }
+
+  /*
+   Change from two columns
+   to one column.
+*/
+
+  .content-layout {
+    flex-direction: column;
+
+    gap: 2rem;
+  }
+
+  .main-content,
+  .sidebar {
+    width: 100%;
+
+    flex-basis: auto;
+  }
+
+  /*
+   Sticky contacts are disabled
+   on the mobile layout.
+*/
+
+  .contact-box {
+    position: static;
+  }
+
+  .alert-banner {
+    margin: 1.2rem 0;
+
+    padding: 1.2rem;
+
+    gap: 0.8rem;
+  }
+
+  .alert-icon {
+    flex-basis: 2.2rem;
+
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+
+  .weather-card {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+  .temperature {
+    text-align: left;
+  }
+}
+
+/* =========================
+SMALL MOBILE
+480px
+========================= */
+
+@media (max-width: 30rem) {
+  .header-container,
+  main {
+    width: 94%;
+  }
+
+  .navigation {
+    gap: 0.5rem 0.8rem;
+  }
+
+  .navigation a {
+    font-size: 0.8rem;
+  }
+
+  .alert-banner {
+    padding: 1rem;
+  }
+
+  .alert-icon {
+    flex-basis: 2rem;
+
+    width: 2rem;
+    height: 2rem;
+
+    font-size: 1rem;
+  }
+
+  .alert-text h2 {
+    font-size: 1.15rem;
+  }
+
+  .alert-text p {
+    font-size: 0.9rem;
+  }
+
+  .content-section {
+    margin-bottom: 2rem;
+  }
+
+  .weather-card {
+    padding: 1rem;
+  }
+
+  .contact-box {
+    padding: 1.2rem;
+  }
+
+  .contact-list a {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 0.2rem;
+
+    padding: 0.8rem;
+  }
+}

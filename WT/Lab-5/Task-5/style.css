@@ -1,0 +1,405 @@
+/* =========================
+RESET
+========================= */
+.summary-card {
+  flex: 1 1 12rem;
+  min-width: 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: Arial, sans-serif;
+
+  background: #f3f5f7;
+
+  color: #20242a;
+
+  line-height: 1.5;
+
+  overflow-x: hidden;
+}
+
+/* =========================
+NAVIGATION
+========================= */
+
+.navbar {
+  width: 100%;
+
+  padding: 1.2rem 5%;
+
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 2rem;
+
+  background: #17212b;
+
+  color: white;
+}
+
+.navbar h1 {
+  font-size: 1.3rem;
+
+  letter-spacing: 0.08rem;
+
+  white-space: nowrap;
+}
+
+.navbar nav {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: flex-end;
+
+  gap: 0.8rem 1.5rem;
+}
+
+.navbar a {
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 0.9rem;
+}
+
+.navbar a:hover {
+  color: #62b0ff;
+}
+
+/* =========================
+DASHBOARD CONTAINER
+========================= */
+
+.dashboard {
+  width: 90%;
+
+  max-width: 75rem;
+
+  margin: 2.5rem auto;
+}
+
+/* =========================
+SUMMARY CARDS
+========================= */
+
+.summary {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 1.2rem;
+}
+
+.summary-card {
+  flex: 1 1 12rem;
+
+  min-width: 0;
+
+  padding: 1.5rem;
+
+  background: white;
+
+  border: 1px solid #dce1e5;
+
+  border-radius: 0.5rem;
+}
+
+.summary-card span,
+.summary-card small {
+  display: block;
+
+  color: #737b84;
+}
+
+.summary-card strong {
+  display: block;
+
+  margin: 0.5rem 0;
+
+  font-size: clamp(1.8rem, 4vw, 2.3rem);
+}
+
+/* =========================
+MAIN PANELS
+========================= */
+
+.main-panels {
+  display: flex;
+
+  gap: 1.5rem;
+
+  margin-top: 1.5rem;
+}
+
+.status-panel,
+.orders-panel {
+  min-width: 0;
+
+  padding: 1.5rem;
+
+  background: white;
+
+  border: 1px solid #dce1e5;
+
+  border-radius: 0.5rem;
+}
+
+.status-panel {
+  flex: 1 1 40%;
+}
+
+.orders-panel {
+  flex: 1 1 60%;
+}
+
+.status-panel h2,
+.orders-panel h2 {
+  margin-bottom: 1rem;
+
+  font-size: 1.4rem;
+}
+
+/* =========================
+STATUS ROWS
+========================= */
+
+.status-row,
+.order {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  gap: 1rem;
+
+  padding: 1rem 0;
+
+  border-bottom: 1px solid #e2e5e8;
+}
+
+.status-row:last-child,
+.order:last-child {
+  border-bottom: none;
+}
+
+.status-row strong {
+  flex-shrink: 0;
+
+  color: #1976d2;
+}
+
+/* =========================
+ORDER INFORMATION
+========================= */
+
+.order > div {
+  min-width: 0;
+}
+
+.order strong {
+  display: block;
+
+  overflow-wrap: anywhere;
+}
+
+.order span {
+  display: block;
+
+  margin-top: 0.25rem;
+
+  color: #737b84;
+
+  font-size: 0.9rem;
+
+  overflow-wrap: anywhere;
+}
+
+/* =========================
+BUTTON
+========================= */
+
+.order button {
+  flex-shrink: 0;
+
+  padding: 0.5rem 0.9rem;
+
+  border: none;
+
+  background: #1976d2;
+
+  color: white;
+
+  border-radius: 0.25rem;
+
+  cursor: pointer;
+}
+
+.order button:hover {
+  background: #125ca3;
+}
+
+/* ==================================================
+TABLET
+1024px AND BELOW
+================================================== */
+
+@media (max-width: 64rem) {
+  .navbar {
+    padding: 1rem 4%;
+  }
+
+  .navbar nav {
+    gap: 0.7rem 1rem;
+  }
+
+  .dashboard {
+    width: 92%;
+
+    margin: 2rem auto;
+  }
+
+  .summary {
+    gap: 1rem;
+  }
+
+  .summary-card {
+    flex: 1 1 calc(50% - 1rem);
+
+    padding: 1.3rem;
+  }
+
+  .main-panels {
+    gap: 1rem;
+  }
+
+  .status-panel,
+  .orders-panel {
+    padding: 1.3rem;
+  }
+}
+
+/* ==================================================
+MOBILE
+700px AND BELOW
+================================================== */
+
+@media (max-width: 43.75rem) {
+  .navbar {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    padding: 1rem 4%;
+  }
+
+  .navbar nav {
+    width: 100%;
+
+    justify-content: flex-start;
+
+    gap: 0.6rem 1rem;
+  }
+
+  .navbar a {
+    font-size: 0.85rem;
+  }
+
+  .dashboard {
+    width: 92%;
+
+    margin: 1.5rem auto;
+  }
+
+  /* One summary card per row */
+
+  .summary-card {
+    flex: 1 1 100%;
+
+    padding: 1.2rem;
+  }
+
+  /* Stack the two main panels */
+
+  .main-panels {
+    flex-direction: column;
+
+    gap: 1rem;
+  }
+
+  .status-panel,
+  .orders-panel {
+    width: 100%;
+  }
+
+  .status-row,
+  .order {
+    padding: 0.9rem 0;
+  }
+}
+
+/* ==================================================
+SMALL MOBILE
+480px AND BELOW
+================================================== */
+
+@media (max-width: 30rem) {
+  .navbar {
+    padding: 0.9rem 3%;
+  }
+
+  .navbar h1 {
+    font-size: 1.1rem;
+  }
+
+  .navbar nav {
+    gap: 0.5rem 0.8rem;
+  }
+
+  .navbar a {
+    font-size: 0.78rem;
+  }
+
+  .dashboard {
+    width: 94%;
+  }
+
+  .summary-card {
+    padding: 1rem;
+  }
+
+  .summary-card strong {
+    font-size: 2rem;
+  }
+
+  .status-panel,
+  .orders-panel {
+    padding: 1rem;
+  }
+
+  .status-panel h2,
+  .orders-panel h2 {
+    font-size: 1.2rem;
+  }
+
+  .order {
+    align-items: flex-start;
+  }
+
+  .order button {
+    padding: 0.45rem 0.7rem;
+  }
+}

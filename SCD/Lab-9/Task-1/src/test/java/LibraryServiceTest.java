@@ -1,0 +1,29 @@
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.Test;
+
+import com.hitms.lms.BookUnavailableException;
+import com.hitms.lms.LibraryService;
+
+class LibraryServiceTest {
+
+    @Test
+    void addBookIncreasesCopies() {
+        LibraryService service = new LibraryService();
+        assertEquals(3, service.addBook("Clean Code", 3));
+    }
+
+    @Test
+    void issueBookDecreasesCopies() throws BookUnavailableException {
+        LibraryService service = new LibraryService();
+        service.addBook("Clean Code", 2);
+        assertEquals(1, service.issueBook("Clean Code"));
+    }
+
+    @Test
+    void returnBookIncreasesCopies() throws BookUnavailableException {
+        LibraryService service = new LibraryService();
+        service.addBook("Clean Code", 1);
+        service.issueBook("Clean Code");
+        assertEquals(1, service.returnBook("Clean Code"));
+    }
+}

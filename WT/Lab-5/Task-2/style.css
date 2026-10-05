@@ -1,0 +1,514 @@
+/* =========================
+BASIC RESET
+========================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  background: #f5f6f8;
+  color: #17191c;
+
+  font-family: Arial, sans-serif;
+
+  line-height: 1.5;
+
+  overflow-x: hidden;
+}
+
+/* =========================
+HEADER
+========================= */
+
+.header {
+  background: #111827;
+  color: white;
+
+  padding: 1.5rem 5%;
+}
+
+.header-content {
+  width: 90%;
+  max-width: 75rem;
+
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 2rem;
+}
+
+.header h1 {
+  font-size: 1.5rem;
+  letter-spacing: 0.15rem;
+}
+
+.header p {
+  color: #cbd5e1;
+  font-size: 0.9rem;
+}
+
+/* =========================
+SEARCH
+========================= */
+
+.search-section {
+  width: 90%;
+  max-width: 75rem;
+
+  margin: auto;
+
+  padding: 3rem 0 2rem;
+
+  text-align: center;
+}
+
+.search-section h2 {
+  margin-bottom: 1.2rem;
+
+  font-size: clamp(1.7rem, 4vw, 2.5rem);
+}
+
+.search-box {
+  width: 100%;
+  max-width: 40rem;
+
+  margin: auto;
+
+  display: flex;
+
+  gap: 0.7rem;
+}
+
+.search-box input {
+  flex: 1;
+
+  min-width: 0;
+
+  padding: 0.9rem 1rem;
+
+  border: 1px solid #d1d5db;
+  border-radius: 0.4rem;
+
+  font-size: 1rem;
+}
+
+.search-box button {
+  padding: 0.9rem 1.5rem;
+
+  border: none;
+  border-radius: 0.4rem;
+
+  background: #2563eb;
+  color: white;
+
+  cursor: pointer;
+}
+
+.search-box button:hover {
+  background: #1d4ed8;
+}
+
+/* =========================
+CATEGORIES
+========================= */
+
+.categories {
+  width: 90%;
+  max-width: 75rem;
+
+  margin: auto;
+
+  padding: 1rem 0 2rem;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  gap: 0.7rem;
+}
+
+.categories a {
+  padding: 0.6rem 1rem;
+
+  border: 1px solid #d1d5db;
+  border-radius: 2rem;
+
+  background: white;
+
+  color: #374151;
+
+  text-decoration: none;
+
+  font-size: 0.9rem;
+}
+
+.categories a:hover {
+  background: #2563eb;
+  color: white;
+}
+
+/* =========================
+PRODUCTS
+========================= */
+
+.products-section {
+  width: 90%;
+  max-width: 75rem;
+
+  margin: auto;
+
+  padding: 3rem 0 5rem;
+}
+
+.section-heading {
+  margin-bottom: 2rem;
+}
+
+.section-heading p {
+  color: #2563eb;
+
+  font-size: 0.75rem;
+
+  letter-spacing: 0.15rem;
+}
+
+.section-heading h2 {
+  margin-top: 0.4rem;
+
+  font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+/* =========================
+PRODUCT GRID
+========================= */
+
+.product-grid {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 1.5rem;
+}
+
+/* =========================
+PRODUCT CARD
+========================= */
+
+.product-card {
+  flex: 1 1 calc(25% - 1.5rem);
+
+  min-width: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  background: white;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 0.6rem;
+
+  overflow: hidden;
+}
+
+/* =========================
+IMAGE PLACEHOLDER
+========================= */
+
+.product-image {
+  width: 100%;
+
+  aspect-ratio: 4 / 3;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #e5e7eb;
+
+  color: #6b7280;
+
+  font-size: 0.8rem;
+
+  letter-spacing: 0.1rem;
+}
+
+/* =========================
+PRODUCT INFORMATION
+========================= */
+
+.product-info {
+  padding: 1.2rem;
+
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
+}
+
+.product-info h3 {
+  margin-bottom: 0.8rem;
+
+  font-size: 1.1rem;
+
+  line-height: 1.35;
+  
+  overflow-wrap: anywhere;
+}
+
+.price {
+  margin-bottom: 1rem;
+
+  color: #2563eb;
+
+  font-size: 1.15rem;
+
+  font-weight: bold;
+}
+
+/* =========================
+PRODUCT BUTTON
+========================= */
+
+.product-button {
+  width: 100%;
+
+  margin-top: auto;
+
+  padding: 0.8rem;
+
+  border: none;
+  border-radius: 0.4rem;
+
+  background: #111827;
+  color: white;
+
+  font-size: 0.9rem;
+
+  cursor: pointer;
+}
+
+.product-button:hover {
+  background: #2563eb;
+}
+
+/* =========================
+PROMOTION
+========================= */
+
+.promotion {
+  width: 90%;
+  max-width: 75rem;
+
+  margin: 0 auto 5rem;
+
+  padding: 3rem;
+
+  border-radius: 0.7rem;
+
+  background: #2563eb;
+  color: white;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 2rem;
+}
+
+.promo-label {
+  margin-bottom: 0.5rem;
+
+  font-size: 0.75rem;
+
+  letter-spacing: 0.15rem;
+
+  color: #bfdbfe;
+}
+
+.promotion h2 {
+  margin-bottom: 0.5rem;
+
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.promotion p:not(.promo-label) {
+  color: #dbeafe;
+}
+
+.promo-button {
+  flex-shrink: 0;
+
+  padding: 0.9rem 1.5rem;
+
+  background: white;
+  color: #2563eb;
+
+  text-decoration: none;
+
+  font-weight: bold;
+
+  border-radius: 0.4rem;
+}
+
+.promo-button:hover {
+  background: #dbeafe;
+}
+
+/* =========================
+FOOTER
+========================= */
+
+footer {
+  padding: 2rem 5%;
+
+  background: #111827;
+
+  color: #9ca3af;
+
+  text-align: center;
+
+  font-size: 0.85rem;
+}
+
+/* =========================
+TABLET
+1024px and below
+========================= */
+
+@media (max-width: 64rem) {
+  .header-content {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 0.3rem;
+  }
+
+  /*
+   4 cards become 2 cards per row.
+   This gives each card more room.
+*/
+  .product-card {
+    flex: 1 1 calc(50% - 1.5rem);
+  }
+
+  .products-section {
+    padding-top: 2.5rem;
+  }
+
+  .promotion {
+    padding: 2.5rem;
+  }
+}
+
+/* =========================
+MOBILE
+700px and below
+========================= */
+
+@media (max-width: 43.75rem) {
+  .search-section {
+    padding-top: 2rem;
+  }
+
+  .categories {
+    justify-content: flex-start;
+  }
+
+  /*
+   One product per row on mobile.
+*/
+  .product-card {
+    flex: 1 1 100%;
+  }
+
+  .product-info {
+    padding: 1rem;
+  }
+
+  .product-info h3 {
+    font-size: 1rem;
+  }
+
+  .promotion {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    padding: 2rem;
+  }
+
+  .promo-button {
+    width: 100%;
+
+    text-align: center;
+  }
+}
+
+/* =========================
+SMALL PHONES
+480px and below
+========================= */
+
+@media (max-width: 30rem) {
+  .header {
+    padding: 1.2rem 4%;
+  }
+
+  .header-content,
+  .search-section,
+  .categories,
+  .products-section {
+    width: 92%;
+  }
+
+  .search-box {
+    flex-direction: column;
+  }
+
+  .search-box button {
+    width: 100%;
+  }
+
+  .categories {
+    gap: 0.5rem;
+  }
+
+  .categories a {
+    padding: 0.5rem 0.8rem;
+
+    font-size: 0.8rem;
+  }
+
+  .products-section {
+    padding-top: 2rem;
+  }
+
+  .product-grid {
+    gap: 1rem;
+  }
+
+  .product-info h3 {
+    font-size: 0.95rem;
+  }
+
+  .promotion {
+    width: 92%;
+
+    padding: 1.5rem;
+  }
+
+  .promotion h2 {
+    font-size: 2rem;
+  }
+}
